@@ -1,0 +1,70 @@
+.pressBG {
+	@include contentSection($white);
+}
+
+.press {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include element('metadata') {
+		font-size: .8em;
+
+		@include modifier('bold') {
+			font-weight: bold;
+		}
+	}
+
+	@include element('title') {
+		margin: 0;
+		font: 1.5em GothamBold;
+		color: $darkpink;
+	}
+	
+	@include element('thumbnail') {
+		float: right;
+		margin: 1em 0 1em 1em;
+		height: 150px;
+
+		@include modifier('smol') {
+			margin: 1em 1em 1em 1em;
+			height: 150px;
+			float: right;
+		}
+	}
+
+	@include element('button') {
+		display: block;
+		font: .8em GothamBold;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: $darkpink;
+		padding: 1em 6em;
+		border: 0;
+		border-radius: 4px;
+		position: inherit;
+		margin-top: 1em;
+
+		@include modifierLink('hover') {
+			background-color: #ec2c75;
+		}
+	}
+
+	@include element('icon') {
+		width: 20px;
+		margin: .5em;
+		margin-right: .9em;
+		margin-left: 0;
+	}
+
+	@include element('divider') {
+		border-color: #d6d6d6;
+		margin: 3em 0;
+	}
+}
+
+.iframe-embed {
+	padding-bottom: 45%;
+}

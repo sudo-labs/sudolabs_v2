@@ -1,0 +1,86 @@
+.eventsBG2 {
+	@include contentSection($white);
+}
+
+.events {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	// // shadow
+ //    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.07),
+ //                0 17px 50px 0 rgba(0, 0, 0, 0.1);
+
+	@include element('title') {
+		margin: 0;
+		font: 1.8em GothamBold;
+		color: $darkpink;
+	}
+
+	@include element('container') {
+		// background-color: white;
+		padding: 3em;
+		margin-bottom: 3em;
+		font-size: 1.05em;
+	}
+	
+	@include element('thumbnail') {
+		width: 300px;
+		float: right;
+	}
+
+	@include element('subtitle') {
+		font-weight: bold;
+	}
+
+	@include element('button') {
+		font: .8em GothamBold;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: $darkpink;
+		padding: 1em 6em;
+		border: 0;
+		border-radius: 4px;
+		position: inherit;
+		margin-top: 10em;
+
+		@include modifierLink('hover') {
+			background-color: #ec2c75;
+		}
+	}
+
+	@include element('icon') {
+		width: 20px;
+		margin: .5em;
+		margin-right: .9em;
+		margin-left: 0;
+	}
+
+	@include element('divider') {
+		border-color: #d6d6d6;
+	}
+
+	@include element('emptyTitle') {
+		text-align: center;
+	}
+
+	@include element('emptyIcon') {
+		height: 6em;
+		display: block;
+    	margin: 0 auto;
+	}
+
+	@include element('emptyDesc') {
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+}
+
+.loader {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	animation-iteration-count: 'infinite';
+}

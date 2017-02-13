@@ -1,0 +1,35 @@
+.sponpartBG {
+	@include contentSection($lightgrey);
+}
+
+.sponpart {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include modifier('center') {
+		text-align: center;
+	}
+
+	@include element('title') {
+		font: 1.5em GothamBold;
+	}
+
+	@include element('logo') {
+		max-width: 300px;
+		max-height: 80px;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    	filter: grayscale(100%);
+	}
+}
+
+.sponpart__logo:hover {
+	filter: none;
+}
+
+@media (max-width: 750px) {
+    .sponpart__container--margin {
+        margin-top: 3em;
+    }
+}

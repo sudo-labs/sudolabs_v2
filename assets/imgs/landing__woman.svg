@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line fill="none" stroke="#fffefe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="30" y1="37" x2="18" y2="37" stroke-linejoin="round"/>
+<line fill="none" stroke="#fffefe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="28" y1="37" x2="28" y2="46" stroke-linejoin="round"/>
+<line fill="none" stroke="#fffefe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="20" y1="46" x2="20" y2="37" stroke-linejoin="round"/>
+<circle data-color="color-2" fill="none" stroke="#fffefe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" cx="24" cy="6" r="4" stroke-linejoin="round"/>
+<path fill="none" stroke="#fffefe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M10,27l4.894-9.789
+C15.572,15.856,16.957,15,18.472,15h11.056c1.515,0,2.9,0.856,3.578,2.211L38,27" stroke-linejoin="round"/>
+<polyline fill="none" stroke="#fffefe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19,21 15,37 
+33,37 29,21 " stroke-linejoin="round"/>
+</g></svg>

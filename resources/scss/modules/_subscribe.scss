@@ -1,0 +1,14 @@
+.subscribeBG {
+	@include contentSection($lightgrey);
+}
+
+.subscribe {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include element('title') {
+		font: 1.5em GothamBold;
+	}
+}

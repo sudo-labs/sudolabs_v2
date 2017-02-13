@@ -1,0 +1,107 @@
+.landingBG {
+	background: $lightpink; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, $lightpink, $darkpink); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, $lightpink, $darkpink); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, $lightpink, $darkpink); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, $lightpink, $darkpink); /* Standard syntax */
+	height: 60vh;
+}
+
+.sublandingBG {
+	background: $lightpink; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, $lightpink, $darkpink); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, $lightpink, $darkpink); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, $lightpink, $darkpink); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, $lightpink, $darkpink); /* Standard syntax */
+	height: 45vh;
+}
+
+.landing {
+	margin: auto;
+	margin-top: 5.5em;
+    max-width: 550px;
+    text-align: center;
+    color: $white;
+	font-size: 1.2em;
+	padding: 1em;
+
+	@include element('text') {
+
+		@include modifier('bold') {
+			font-weight: bold;
+		}
+
+		@include modifier('verticalAlign') {
+			position: relative;
+  			top: 40%;
+  			transform: translateY(-50%);
+		}
+	}
+
+	@include element('img') {
+		vertical-align: baseline;
+		
+		@include modifier('small') {
+			margin-right: -.8em;
+		}
+
+		@include modifier('last') {
+		}
+	}
+}
+
+.sublanding {
+	margin: auto;
+	margin-top: 3em;
+    max-width: 550px;
+    text-align: center;
+    color: $white;
+	font-size: 1.2em;
+	padding: 1em;
+
+	@include element('title') {
+		font: 2em GothamBold;
+		color: $white;
+		padding-bottom: 1em;
+		margin-top: 0;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		position: relative;
+		text-align: center;
+
+		@include modifierLink('after') {
+			content: "";
+			background: $white;
+			position: absolute; 
+			bottom: 0; 
+			left: calc(50% - 25px); 
+			height: 5px; 
+			width: 50px;
+		}
+	}
+
+	@include element('icon') {
+		margin: 1em;
+		width: 2.8em;
+	}
+}
+
+// Scale Images
+@media (max-width: 275px) {
+    .landing__img--small {
+		transform: scale(.8);
+		margin-right: -1.3em;
+    }
+    
+    .landing__img--last, .landing__img {
+    	transform: scale(.8);
+    	margin-right: 0;
+    }
+}
+
+// Scale Landing Section height
+@media (max-height: 930px) {
+    .landingBG {
+    	height: 100vh;
+    }
+}

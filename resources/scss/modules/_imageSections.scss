@@ -1,0 +1,48 @@
+.eventsBG {
+	@include contentSection(transparent);
+	background-image: url("../../assets/imgs/events__BGimg.png");
+	background-size: cover;
+    background-position: center;
+}
+
+.workshopsBG {
+	@include contentSection(transparent);
+	background-image: url("../../assets/imgs/workshops__BGimg.png");
+	background-size: cover;
+    background-position: center;
+}
+
+.sponsorsBG {
+	@include contentSection(transparent);
+	background-image: url("../../assets/imgs/sponsors__BGimg.png");
+	background-size: cover;
+    background-position: center;
+}
+
+.imgSection {
+	color: $white;
+	position: relative;
+	max-width: 900px;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include element('title') {
+		font: 2em GothamBold;
+		color: $white;
+		margin: 0;
+
+		@include modifier('small') {
+			font: 1.5em GothamBold;
+		}
+	}
+
+	@include modifier('right') {
+		text-align: right;
+	}
+
+	@include modifier('center') {
+		text-align: center;
+	}
+}

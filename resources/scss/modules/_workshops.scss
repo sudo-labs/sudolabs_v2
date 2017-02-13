@@ -1,0 +1,82 @@
+.workshopsBG2 {
+	@include contentSection($lightgrey);
+}
+
+.workshops {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.07),
+                0 17px 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+	padding: 3em;
+	margin-bottom: 3em;
+
+	@include element('title') {
+		margin: 0 0 .5em 0;
+		font: 1.8em GothamBold;
+		color: $darkgrey;
+	}
+
+	@include element('button') {
+		font: .8em GothamBold;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: $darkpink;
+		padding: 1em 3em;
+		border: 0;
+		border-radius: 4px;
+
+		@include modifierLink('hover') {
+			background-color: #ec2c75;
+		}
+	}
+
+	@include element('icon') {
+		width: 2.7em;
+		float: right;
+	}
+
+	@include element('pill') {
+		display: inline-block;
+		background-color: $darkpink;
+		font-size: .8em;
+		color: $white;
+		font-weight: bold;
+		padding: .2em;
+		padding-left: 1em;
+		padding-right: 1em;
+		border-radius: 100em;
+		text-transform: uppercase;
+		margin-bottom: 1.7em;
+	}
+
+	@include element('subtitle') {
+		font-weight: bold;
+		color: $darkgrey;
+	}
+
+	@include element('container') {
+		@include modifier('noPadding') {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@include modifier('margin') {
+			margin-top: .6em;
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+    .workshops__container--margin {
+        margin-top: 1em;
+    }
+}
+
+// .container-fluid , .row, .col-sm-2, col-sm-10{
+// 	border: 1px black solid;
+// }

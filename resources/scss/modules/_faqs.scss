@@ -1,0 +1,24 @@
+.faqBG {
+	@include contentSection($lightgrey);
+}
+
+.faq {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include modifier('center') {
+		text-align: center;
+	}
+
+	@include element('title') {
+		font: 1.5em GothamBold;
+
+		@include modifier('small') {
+			font: 1em GothamBold;
+		}
+	}
+
+
+}

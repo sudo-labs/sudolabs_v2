@@ -1,0 +1,16 @@
+{
+  "name": "sudo_v3",
+  "version": "1.0.0",
+  "description": "Sudo website V3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cara Falcon",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.0.0"
+  }
+}

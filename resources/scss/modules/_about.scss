@@ -1,0 +1,34 @@
+.aboutBG {
+	@include contentSection($lightgrey);
+}
+
+.about {
+	position: relative;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include element('title') {
+		font: 1.5em GothamBold;
+		text-align: center;
+	}
+
+	@include element('img') {
+
+		@include modifier('center') {
+			margin: auto;
+			display: block;
+		}
+
+		@include modifier('small') {
+			height: 110px;
+		}
+	}
+
+	@include element('container'){
+		@include modifier('margin'){
+			margin-top: 3em;
+		}
+	}
+
+}

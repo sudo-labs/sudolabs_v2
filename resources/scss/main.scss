@@ -1,0 +1,108 @@
+// Global Variables
+$lightpink: #ED7A87;
+$darkpink: #DE5086;
+$white: #FFF;
+$darkgrey: #1E1E1E;
+$lightgrey: #F9F9F9;
+
+@font-face {
+	font-family: GothamBold;
+	src: url(../../assets/fonts/gotham-bold.ttf);
+}
+
+@import 'mixins';
+@import 'modules/nav';
+@import 'modules/events';
+@import 'modules/landing';
+@import 'modules/buttons';
+@import 'modules/type';
+@import 'modules/about';
+@import 'modules/imageSections';
+@import 'modules/faqs';
+@import 'modules/sponpart';
+@import 'modules/subscribe';
+@import 'modules/form';
+@import 'modules/footer';
+@import 'modules/menu';
+@import 'modules/workshops';
+@import 'modules/press';
+
+body {
+	-webkit-font-smoothing: antialiased !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11.5pt;
+	line-height: 1.42857143;
+	font-weight: 300;
+	letter-spacing: .1pt;
+	margin: 0;
+	padding-top: -50px;
+}
+
+
+.link {
+
+	@include modifier('pink') {
+		color: $darkpink;
+
+		@include modifierLink('hover') {
+			color: $darkpink;
+		}
+		@include modifierLink('active') {
+			color: $darkpink;
+			text-decoration: none;
+		}
+		@include modifierLink('visited') {
+			color: $darkpink;
+			text-decoration: none;
+		}
+	}
+
+	@include modifier('white') {
+		color: $lightgrey;
+
+		@include modifierLink('hover') {
+			color: $lightgrey;
+			text-decoration: none;
+		}
+		@include modifierLink('active') {
+			color: $lightgrey;
+			text-decoration: none;
+		}
+		@include modifierLink('visited') {
+			color: $lightgrey;
+			text-decoration: none;
+		}
+	}
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 1em;
+}
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: $white;
+	height: 4px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
+}

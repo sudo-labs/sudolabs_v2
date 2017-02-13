@@ -1,0 +1,38 @@
+$width: 99px;
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: $width }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width: $width }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $darkgrey }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $darkgrey }
+}
+
+h1.type { 
+    color: $darkgrey;
+    font-family: Courier New;
+    font-size: 2.5em;
+    width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .1em solid $darkgrey;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    -webkit-animation: typing 1s steps(4, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 1s steps(4, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
