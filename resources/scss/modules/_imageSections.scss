@@ -17,6 +17,10 @@
 	background-image: url("../../assets/imgs/sponsors__BGimg.png");
 	background-size: cover;
     background-position: center;
+
+    @include element('description') {
+    	padding-bottom: 1em;
+    }
 }
 
 .imgSection {

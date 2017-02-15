@@ -63,10 +63,6 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
-
-		@include modifier('margin') {
-			margin-top: .6em;
-		}
 	}
 
 }
@@ -74,6 +70,12 @@
 @media (max-width: 767px) {
     .workshops__container--margin {
         margin-top: 1em;
+    }
+}
+
+@media (max-width: 614px) {
+    .workshops__button--margin {
+        margin-top: .8em;
     }
 }
 

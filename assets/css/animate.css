@@ -471,6 +471,32 @@
   animation-name: tada;
 }
 
+.delay1 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.delay2 {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.delay3 {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.delay4 {
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+
+.delay5 {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes wobble {

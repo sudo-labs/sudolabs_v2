@@ -21,10 +21,6 @@
 	@include element('socialMediaIcon') {
 		height: 25px;
 		margin: 1em;
-
-		@include modifierLink('hover'){
-			fill: $darkpink;
-		}
 	}
 
 	@include element('logo') {
