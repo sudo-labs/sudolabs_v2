@@ -51,6 +51,8 @@
     float: right; }
   .events__subtitle {
     font-weight: bold; }
+  .events__description {
+    font-weight: normal; }
   .events__button {
     font: .8em GothamBold;
     color: #FFF;
@@ -60,8 +62,8 @@
     padding: 1em 6em;
     border: 0;
     border-radius: 4px;
-    position: inherit;
-    margin-top: 10em; }
+    position: absolute;
+    margin-top: 1em; }
     .events__button:hover {
       background-color: #ec2c75; }
   .events__icon {
@@ -201,6 +203,12 @@ button:focus {
   .pinkButton:hover {
     background-color: #ec2c75; }
 
+.removeUnderline {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: #FFF; }
+
 @-webkit-keyframes typing {
   from {
     width: 0; }
@@ -288,6 +296,18 @@ h1.type {
   background-position: center; }
   .sponsorsBG__description {
     padding-bottom: 1em; }
+  .sponsorsBG__button {
+    font: .7em GothamBold;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1em 5.5em;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 2em; }
+    .sponsorsBG__button:hover {
+      background: rgba(255, 255, 255, 0.4); }
 
 .imgSection {
   color: #FFF;
@@ -763,7 +783,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11.5pt;
   line-height: 1.42857143;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .1pt;
   margin: 0;
   padding-top: -50px; }
@@ -821,3 +841,20 @@ body {
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0; }
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out; }
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px); }

@@ -21,6 +21,24 @@
     @include element('description') {
     	padding-bottom: 1em;
     }
+
+    @include element('button') {
+    	font: .7em GothamBold;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: bold;
+		background: rgba(255, 255, 255, 0.2);
+		padding: 1em 5.5em;
+		border: 0;
+		border-radius: 4px;
+		margin-top: 2em;
+
+		@include modifierLink('hover') {
+			background: rgba(255, 255, 255, 0.4);
+		}
+    }
+
+    @include modifier('')
 }
 
 .imgSection {

@@ -32,3 +32,10 @@ button:focus {
 		background-color: #ec2c75;
 	}
 }
+
+.removeUnderline {
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+	color: $white;
+}

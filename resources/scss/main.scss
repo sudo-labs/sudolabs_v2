@@ -32,12 +32,11 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11.5pt;
 	line-height: 1.42857143;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: .1pt;
 	margin: 0;
 	padding-top: -50px;
 }
-
 
 .link {
 
@@ -105,4 +104,23 @@ body {
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
 	left: 0;
 	right: 0;
+}
+
+/* Float */
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
 }

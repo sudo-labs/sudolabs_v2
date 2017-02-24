@@ -33,6 +33,10 @@
 		font-weight: bold;
 	}
 
+	@include element('description') {
+		font-weight: normal;
+	}
+
 	@include element('button') {
 		font: .8em GothamBold;
 		color: $white;
@@ -42,8 +46,8 @@
 		padding: 1em 6em;
 		border: 0;
 		border-radius: 4px;
-		position: inherit;
-		margin-top: 10em;
+		position: absolute;
+		margin-top: 1em;
 
 		@include modifierLink('hover') {
 			background-color: #ec2c75;
