@@ -369,6 +369,7 @@ h1.type {
     filter: grayscale(100%); }
 
 .sponpart__logo:hover {
+  -webkit-filter: none;
   filter: none; }
 
 @media (max-width: 750px) {
