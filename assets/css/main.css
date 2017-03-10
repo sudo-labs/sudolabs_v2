@@ -367,6 +367,8 @@ h1.type {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%); }
+    .sponpart__logo--leftMargin {
+      margin-left: 2em; }
 
 .sponpart__logo:hover {
   -webkit-filter: none;
