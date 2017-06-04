@@ -32,6 +32,12 @@
 			height: 150px;
 			float: right;
 		}
+
+		@include modifier('noHeight') {
+			margin: 1em 1em 1em 1em;
+			height: 100%;
+			float: right;
+		}
 	}
 
 	@include element('button') {

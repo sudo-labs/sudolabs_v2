@@ -755,6 +755,10 @@ h1.type {
       margin: 1em 1em 1em 1em;
       height: 150px;
       float: right; }
+    .press__thumbnail--noHeight {
+      margin: 1em 1em 1em 1em;
+      height: 100%;
+      float: right; }
   .press__button {
     display: block;
     font: .8em GothamBold;
