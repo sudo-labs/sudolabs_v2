@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 1; }
 
-@media (max-width: 750px), (max-height: 500px) {
+@media (max-width: 870px), (max-height: 500px) {
   .nav {
     display: none; } }
 
@@ -617,7 +617,7 @@ h1.type {
   .overlay nav {
     position: relative;
     height: 70%;
-    top: 45%;
+    top: 39%;
     transform: translateY(-50%);
     font-size: 70px;
     font-family: 'Reenie Beanie', cursive;
@@ -664,7 +664,7 @@ h1.type {
     opacity: 1;
     left: 0; } }
 
-@media (max-width: 750px), (max-height: 500px) {
+@media (max-width: 870px), (max-height: 500px) {
   .button_container {
     display: block; } }
 
@@ -679,10 +679,11 @@ h1.type {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.07), 0 17px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 23px 8px rgba(0, 0, 0, 0.03);
   background-color: white;
   padding: 3em;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  border-radius: .3em; }
   .workshops__title {
     margin: 0 0 .5em 0;
     font: 1.8em GothamBold;

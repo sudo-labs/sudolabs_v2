@@ -94,7 +94,7 @@ $button-width: 35px;
   nav {
     position: relative;
     height: 70%;
-    top: 45%;
+    top: 39%;
     transform: translateY(-50%);
     font-size: 70px;
     font-family: 'Reenie Beanie', cursive;
@@ -157,7 +157,7 @@ $button-width: 35px;
   }
 }
 
-@media (max-width: 750px), (max-height: 500px) {
+@media (max-width: 870px), (max-height: 500px) {
     .button_container {
         display: block;
     }
