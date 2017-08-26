@@ -156,7 +156,7 @@
       background: #FFF;
       position: absolute;
       bottom: 0;
-      left: calc(50% - 25px);
+      left: calc(50% - 2px);
       height: 5px;
       width: 50px; }
   .sublanding__icon {
@@ -785,6 +785,12 @@ h1.type {
 
 .iframe-embed {
   padding-bottom: 45%; }
+
+.blogBG2 {
+  background-color: #FFF;
+  padding: 7vw;
+  padding-top: 4em;
+  padding-bottom: 4em; }
 
 body {
   -webkit-font-smoothing: antialiased !important;
