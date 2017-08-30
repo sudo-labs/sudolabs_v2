@@ -156,7 +156,7 @@
       background: #FFF;
       position: absolute;
       bottom: 0;
-      left: calc(50% - 2px);
+      left: calc(50% - 25px);
       height: 5px;
       width: 50px; }
   .sublanding__icon {
@@ -679,11 +679,20 @@ h1.type {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 0 0 23px 8px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e5e5e5;
   background-color: white;
   padding: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   border-radius: .3em; }
+  .workshops--empty {
+    position: relative;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px dashed #1E1E1E;
+    padding: 3em;
+    margin-bottom: 2em;
+    border-radius: .3em; }
   .workshops__title {
     margin: 0 0 .5em 0;
     font: 1.8em GothamBold;
@@ -787,10 +796,93 @@ h1.type {
   padding-bottom: 45%; }
 
 .blogBG2 {
-  background-color: #FFF;
+  background-color: #F9F9F9;
   padding: 7vw;
   padding-top: 4em;
   padding-bottom: 4em; }
+
+.blog__container {
+  position: relative;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #e5e5e5;
+  background-color: white;
+  padding: 3em;
+  margin-bottom: 2em;
+  border-radius: .3em; }
+
+.blog__title {
+  margin: 0 0 .5em 0;
+  font: 1.8em GothamBold;
+  color: #1E1E1E; }
+
+.blog__button {
+  font: .8em GothamBold;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #DE5086;
+  padding: 1em 3em;
+  border: 0;
+  border-radius: 4px; }
+  .blog__button:hover {
+    background-color: #ec2c75; }
+
+.blog__author > h4 {
+  display: inline;
+  font-weight: bold;
+  margin-bottom: 3em; }
+
+.blog__date {
+  display: inline;
+  font-weight: bold; }
+
+.blog__container--noPadding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.read__more {
+  display: block;
+  font: .8em GothamBold;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #DE5086;
+  margin-top: 2em;
+  padding: 1em 3em;
+  border: 0;
+  border-radius: 4px; }
+  .read__more:hover {
+    background-color: #ec2c75; }
+
+.read__less {
+  display: block;
+  font: .8em GothamBold;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #DE5086;
+  padding: 1em 3em;
+  border: 0;
+  border-radius: 4px; }
+  .read__less:hover {
+    background-color: #ec2c75; }
+
+.more__text {
+  margin-top: 2em; }
+
+.more__text > figure {
+  text-align: center; }
+
+.more__text > figure > img {
+  max-width: 100%;
+  height: auto; }
+
+.more__text > figure > figcaption {
+  font-size: .9em;
+  font-weight: bold;
+  padding-top: .5em; }
 
 body {
   -webkit-font-smoothing: antialiased !important;

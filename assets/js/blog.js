@@ -20,17 +20,18 @@ $( document ).ready(function() {
                 title.innerHTML = item.title;
 
                 var desc = item.content;
-                var subtitle = desc.substring(0, desc.indexOf("</h4>") + 5);
+                var subtitle = desc.substring(0, desc.indexOf("</h4>") + 5) + ' | ';
                 var remaining = desc.substring(desc.indexOf("</h4>"));
 
                 var date = document.createElement('span')
-                date.className = 'events__date';
+                date.className = 'blog__date';
                 date.innerHTML = moment(item.pubDate.substring(0, 10)).format("MMM Do YYYY");
 
                 var bySpan = document.createElement("span");
-                bySpan.innerHTML = subtitle;
+                bySpan.className = 'blog__author';
+                bySpan.innerHTML = subtitle;                
 
-                var hiddenSpan = document.createElement("span");
+                var hiddenSpan = document.createElement("div");
                 hiddenSpan.className = "more__text";
                 hiddenSpan.innerHTML = remaining;
 
@@ -43,8 +44,8 @@ $( document ).ready(function() {
                 hide.innerHTML = "Hide";
 
                 postContainer.appendChild(title);
-                postContainer.appendChild(date);
                 postContainer.appendChild(bySpan);
+                postContainer.appendChild(date);
                 postContainer.appendChild(hiddenSpan);
                 postContainer.appendChild(readMore);
                 postContainer.appendChild(hide);

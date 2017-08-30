@@ -7,13 +7,23 @@
 	max-width: 900px;
 	margin-right: auto;
 	margin-left: auto;
-    // box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.07),
-    //             0 17px 50px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 23px 8px rgba(0,0,0,0.03);
+    // box-shadow: 0 0 23px 8px rgba(0,0,0,0.03);
+    border: 1px solid $lightgrey2;
     background-color: white;
 	padding: 3em;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 	border-radius: .3em;
+	
+	@include modifier('empty') {
+		position: relative;
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+    	border: 1px dashed $darkgrey;
+		padding: 3em;
+		margin-bottom: 2em;
+		border-radius: .3em;
+	}
 
 	@include element('title') {
 		margin: 0 0 .5em 0;
