@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
     $.get('https://api.rss2json.com/v1/api.json', data, function(response) {
         // console.log(response)
-        if (response.status = "ok") {
+        if (response.status === "ok") {
             document.querySelector('.blogBG2 > img').style.display = 'none';
             var blogDiv = document.querySelector('.blog');
             var i = 1;

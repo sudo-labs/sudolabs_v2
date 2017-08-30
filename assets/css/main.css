@@ -739,7 +739,7 @@ h1.type {
     margin-top: .8em; } }
 
 .pressBG {
-  background-color: #FFF;
+  background-color: #F9F9F9;
   padding: 7vw;
   padding-top: 4em;
   padding-bottom: 4em; }
@@ -749,23 +749,36 @@ h1.type {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto; }
+  .press__container {
+    position: relative;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+    padding: 3em;
+    margin-bottom: 2em;
+    border-radius: .3em; }
   .press__metadata {
     font-size: .8em; }
     .press__metadata--bold {
       font-weight: bold; }
   .press__title {
-    margin: 0;
-    font: 1.5em GothamBold;
-    color: #DE5086; }
+    margin: 0 0 .5em 0;
+    font: 1.8em GothamBold;
+    color: #1E1E1E; }
   .press__thumbnail {
+    display: none;
     float: right;
     margin: 1em 0 1em 1em;
     height: 150px; }
     .press__thumbnail--smol {
+      display: none;
       margin: 1em 1em 1em 1em;
-      height: 150px;
+      height: 10w t0px;
       float: right; }
     .press__thumbnail--noHeight {
+      display: none;
       margin: 1em 1em 1em 1em;
       height: 100%;
       float: right; }

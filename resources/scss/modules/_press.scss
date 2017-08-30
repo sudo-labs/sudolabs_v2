@@ -1,5 +1,5 @@
 .pressBG {
-	@include contentSection($white);
+	@include contentSection($lightgrey);
 }
 
 .press {
@@ -7,6 +7,19 @@
 	max-width: 900px;
 	margin-right: auto;
 	margin-left: auto;
+
+	@include element('container') {
+		position: relative;
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+    	// box-shadow: 0 0 23px 8px rgba(0,0,0,0.03);
+    	border: 1px solid $lightgrey2;
+    	background-color: white;
+		padding: 3em;
+		margin-bottom: 2em;
+		border-radius: .3em;
+	}
 
 	@include element('metadata') {
 		font-size: .8em;
@@ -17,23 +30,26 @@
 	}
 
 	@include element('title') {
-		margin: 0;
-		font: 1.5em GothamBold;
-		color: $darkpink;
+		margin: 0 0 .5em 0;
+		font: 1.8em GothamBold;
+		color: $darkgrey;
 	}
 	
 	@include element('thumbnail') {
+		display: none;
 		float: right;
 		margin: 1em 0 1em 1em;
 		height: 150px;
 
 		@include modifier('smol') {
+			display: none;
 			margin: 1em 1em 1em 1em;
-			height: 150px;
+			height: 10w t0px;
 			float: right;
 		}
 
 		@include modifier('noHeight') {
+			display: none;
 			margin: 1em 1em 1em 1em;
 			height: 100%;
 			float: right;
