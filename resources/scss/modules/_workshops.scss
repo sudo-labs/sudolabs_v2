@@ -29,6 +29,17 @@
 		margin: 0 0 .5em 0;
 		font: 1.8em GothamBold;
 		color: $darkgrey;
+
+		@include modifier('center') {
+			text-align: center;
+			font: 1.5em GothamBold;
+			color: $darkgrey;
+		}
+	}
+
+	@include element('description') {
+			text-align: center;
+			margin-bottom: 3em;
 	}
 
 	@include element('button') {
