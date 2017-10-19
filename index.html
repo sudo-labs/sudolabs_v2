@@ -13,7 +13,8 @@
 </head>
 	<body>
 		<!-- Desktop Navigation -->
-		<a href="http://sudolabs.ca"><img src="assets/imgs/nav__logo.png" class="nav__logo"></a>
+		<span itemscope itemtype="http://schema.org/LocalBusiness">
+		<a href="http://sudolabs.ca"><img itemprop="image" src="assets/imgs/nav__logo.png" class="nav__logo"></a>
 		<div class="nav">
 			<ul>
 				<li class="nav__item"><a href="https://sudolabs.ca" class="link--white hvr-underline-from-center">Home</a></li>
@@ -60,7 +61,12 @@
 							<img src="assets/imgs/landing__woman.svg" class="landing__img--small animated bounceIn delay4">
 							<img src="assets/imgs/landing__woman.svg" class="landing__img--last animated bounceIn delay5">
 
-							<p class="landing__text">Sudo is a Kingston-based initiative with the mission to create a community where women can learn to code together.</p>
+							<p class="landing__text">
+								<span itemprop="name">Sudo</span> is a 
+								<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Kingston</span>
+									<meta itemprop="addressCountry" content="Canada">
+								</span>-based initiative with the mission to create a community where women can learn to code together.</p>
 							<p class="landing__text--bold">Let's get coding.</p>
 
 							<button class="clearButton" href="#about" onclick="smoothScroll('about');">About</button>
@@ -162,14 +168,15 @@
 			<div class="sponpart">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-6">
+						<!-- <div class="col-sm-6">
 							<div class="sponpart--center">
 								<h1 class="sponpart__title">Sponsors</h1>
 								<a href="http://www.dragonflyit.ca/" target="_blank" alt="Innovate Kingston's website"><img src="assets/imgs/sponpart/sponpart__Dragonfly.png" class="sponpart__logo" alt="Dragonfly Logo"></a>
 							</div>
-						</div>
+						</div> 
 
-						<div class="col-sm-6 sponpart__container--margin">
+						took out class col-sm-6 from this div-->
+						<div class="sponpart__container--margin">
 							<div class="sponpart--center">
 								<h1 class="sponpart__title">Partners</h1>
 								<a href="https://www.innovatekingston.ca/" target="_blank" alt="Innovate Kingston's website"><img src="assets/imgs/sponpart/sponpart__IK.png" class="sponpart__logo" alt="Innovate Kingston Logo"></a> <a href="http://www.bambinosandblankets.ca/" target="_blank" alt="Bambino & Blankets website"><img src="assets/imgs/sponpart/sponpart__bnb.png" class="sponpart__logo sponpart__logo--leftMargin" alt="Bambinos & Blankets Logo"></a>
@@ -226,11 +233,14 @@
 				<a href="https://twitter.com/sudolabs_" target="_blank"><img src="assets/imgs/socialMedia/footer__twitter.svg" class="footer__socialMediaIcon hvr-float" alt="Twitter link"></a>
 				<a href="https://www.instagram.com/sudolabs/" target="_blank"><img src="assets/imgs/socialMedia/footer__instagram.svg" class="footer__socialMediaIcon hvr-float" alt="Instagram link"></a>
 				<a href="https://www.linkedin.com/company/sudo-labs" target="_blank"><img src="assets/imgs/socialMedia/footer__linkedin.svg" class="footer__socialMediaIcon hvr-float" alt="LinkedIn link"></a>
-				<p><a href="mailto:hello@sudolabs.ca" class="link--white hvr-underline-from-center">hello@sudolabs.ca</a></p>
+				<p><a href="mailto:hello@sudolabs.ca" class="link--white hvr-underline-from-center"><span itemprop="email">hello@sudolabs.ca</span></a></p>
 				<p class="footer__copyright">&#169; 2017 Sudo. Made with skills by <a href="http://www.carafalcon.com" alt="Cara's website" class="link--white footer__copyright--bold">Cara Falcon</a>.</p>
 				<img src="assets/imgs/footer__arrow.svg" class="footer__logo">
 			</div>
 		</section>
+		<meta itemprop="url" content="https://sudolabs.ca/">
+		<meta itemprop="priceRange" content="0">
+		</span>
 	
 	<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
