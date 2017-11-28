@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 1; }
 
-@media (max-width: 870px), (max-height: 500px) {
+@media (max-width: 1055px), (max-height: 500px) {
   .nav {
     display: none; } }
 
@@ -200,6 +200,8 @@ button:focus {
   margin-left: 1.2em;
   border: 0;
   border-radius: 4px; }
+  .pinkButton--clearMargin {
+    margin-left: 0em; }
   .pinkButton:hover {
     background-color: #ec2c75; }
 
@@ -616,10 +618,10 @@ h1.type {
         animation-delay: .50s; }
   .overlay nav {
     position: relative;
-    height: 70%;
-    top: 39%;
+    height: 50%;
+    top: 35%;
     transform: translateY(-50%);
-    font-size: 70px;
+    font-size: 4em;
     font-family: 'Reenie Beanie', cursive;
     font-weight: 400;
     text-align: center; }
@@ -664,7 +666,7 @@ h1.type {
     opacity: 1;
     left: 0; } }
 
-@media (max-width: 870px), (max-height: 500px) {
+@media (max-width: 1055px), (max-height: 500px) {
   .button_container {
     display: block; } }
 
@@ -903,6 +905,50 @@ h1.type {
   font-size: .9em;
   font-weight: bold;
   padding-top: .5em; }
+
+.solidBG {
+  background-color: #FFF;
+  padding: 7vw;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-top: 7em;
+  padding-bottom: 7em; }
+
+.imgBG1 {
+  background-color: transparent;
+  padding: 7vw;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-image: url("../../assets/imgs/getInvolved/getInvolved__volunteer.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 10em;
+  padding-bottom: 10em; }
+
+.imgBG2 {
+  background-color: transparent;
+  padding: 7vw;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-image: url("../../assets/imgs/getInvolved/getInvolved__laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 10em;
+  padding-bottom: 10em; }
+
+.getInvolvedContent {
+  color: #FFF;
+  position: relative;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
+  .getInvolvedContent--light {
+    color: #1E1E1E; }
+  .getInvolvedContent__title {
+    font: 2em GothamBold;
+    margin: 0; }
+    .getInvolvedContent__title--small {
+      font: 1em GothamBold; }
 
 body {
   -webkit-font-smoothing: antialiased !important;

@@ -93,10 +93,10 @@ $button-width: 35px;
   }
   nav {
     position: relative;
-    height: 70%;
-    top: 39%;
+    height: 50%;
+    top: 35%;
     transform: translateY(-50%);
-    font-size: 70px;
+    font-size: 4em;
     font-family: 'Reenie Beanie', cursive;
     font-weight: 400;
     text-align: center;
@@ -157,7 +157,7 @@ $button-width: 35px;
   }
 }
 
-@media (max-width: 870px), (max-height: 500px) {
+@media (max-width: 1055px), (max-height: 500px) {
     .button_container {
         display: block;
     }

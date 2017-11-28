@@ -1,0 +1,44 @@
+.solidBG {
+    @include contentSection($white);
+    padding-top: 7em;
+	padding-bottom: 7em;
+}
+
+.imgBG1 {
+	@include contentSection(transparent);
+	background-image: url("../../assets/imgs/getInvolved/getInvolved__volunteer.jpg");
+	background-size: cover;
+    background-position: center;
+    padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+.imgBG2 {
+	@include contentSection(transparent);
+	background-image: url("../../assets/imgs/getInvolved/getInvolved__laptop.jpg");
+	background-size: cover;
+    background-position: center;
+    padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+.getInvolvedContent {
+	color: $white;
+	position: relative;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include modifier('light') {
+		color: $darkgrey;
+	}
+
+	@include element('title') {
+		font: 2em GothamBold;
+		margin: 0;
+
+		@include modifier('small') {
+			font: 1em GothamBold;
+		}
+	}
+}

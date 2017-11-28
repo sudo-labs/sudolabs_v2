@@ -28,6 +28,10 @@ button:focus {
 	border: 0;
 	border-radius: 4px;
 	
+	@include modifier('clearMargin') {
+		margin-left: 0em;
+	}
+
 	@include modifierLink('hover') {
 		background-color: #ec2c75;
 	}
