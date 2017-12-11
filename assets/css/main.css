@@ -100,7 +100,9 @@
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #ED7A87, #DE5086);
   /* Standard syntax */
-  height: 60vh; }
+  height: 80vh;
+  max-height: 700px;
+  min-height: 600px; }
 
 .sublandingBG {
   background: #ED7A87;
@@ -113,7 +115,7 @@
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #ED7A87, #DE5086);
   /* Standard syntax */
-  height: 45vh; }
+  height: 50%; }
 
 .landing {
   margin: auto;
@@ -126,9 +128,7 @@
   .landing__text--bold {
     font-weight: bold; }
   .landing__text--verticalAlign {
-    position: relative;
-    top: 40%;
-    transform: translateY(-50%); }
+    transform: translateY(-15%); }
   .landing__img {
     vertical-align: baseline; }
     .landing__img--small {
@@ -170,10 +170,6 @@
   .landing__img--last, .landing__img {
     transform: scale(0.8);
     margin-right: 0; } }
-
-@media (max-height: 930px) {
-  .landingBG {
-    height: 100vh; } }
 
 button:focus {
   outline: 0; }
@@ -700,9 +696,10 @@ h1.type {
     font: 1.8em GothamBold;
     color: #1E1E1E; }
     .workshops__title--center {
-      text-align: center;
       font: 1.5em GothamBold;
-      color: #1E1E1E; }
+      color: #1E1E1E;
+      display: block;
+      text-align: center; }
   .workshops__description {
     text-align: center;
     margin-bottom: 3em; }

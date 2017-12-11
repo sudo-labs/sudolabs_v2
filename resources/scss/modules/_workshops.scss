@@ -31,9 +31,10 @@
 		color: $darkgrey;
 
 		@include modifier('center') {
-			text-align: center;
 			font: 1.5em GothamBold;
 			color: $darkgrey;
+			display: block;
+			text-align: center;
 		}
 	}
 

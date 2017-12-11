@@ -4,7 +4,9 @@
 	background: -o-linear-gradient(bottom right, $lightpink, $darkpink); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(bottom right, $lightpink, $darkpink); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to bottom right, $lightpink, $darkpink); /* Standard syntax */
-	height: 60vh;
+	height: 80vh;
+	max-height: 700px;
+	min-height: 600px;
 }
 
 .sublandingBG {
@@ -13,7 +15,7 @@
 	background: -o-linear-gradient(bottom right, $lightpink, $darkpink); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(bottom right, $lightpink, $darkpink); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to bottom right, $lightpink, $darkpink); /* Standard syntax */
-	height: 45vh;
+	height: 50%;
 }
 
 .landing {
@@ -32,9 +34,11 @@
 		}
 
 		@include modifier('verticalAlign') {
-			position: relative;
-  			top: 40%;
-  			transform: translateY(-50%);
+  			transform: translateY(-15%);
+		}
+
+		@include modifier('verticalAlignMain') {
+  			// transform: translateY(0%);
 		}
 	}
 
@@ -99,9 +103,9 @@
     }
 }
 
-// Scale Landing Section height
-@media (max-height: 930px) {
-    .landingBG {
-    	height: 100vh;
-    }
-}
+// // Scale Landing Section height
+// @media (max-height: 930px) {
+//     .landingBG {
+//     	height: 100vh;
+//     }
+// }
