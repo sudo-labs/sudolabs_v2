@@ -947,6 +947,46 @@ h1.type {
     .getInvolvedContent__title--small {
       font: 1em GothamBold; }
 
+.teamBG {
+  background-color: #FFF;
+  padding: 7vw;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
+.teamContent {
+  color: #FFF;
+  position: relative;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
+  .teamContent--light {
+    color: #1E1E1E; }
+  .teamContent__title {
+    margin: 0 0 .5em 0;
+    font: 1.8em GothamBold;
+    color: #1E1E1E;
+    text-align: center; }
+  .teamContent__description {
+    text-align: center;
+    margin-bottom: 3em; }
+  .teamContent__name {
+    padding-top: 1em;
+    font: 1.2em GothamBold;
+    text-align: center;
+    display: block; }
+  .teamContent__role {
+    padding-top: .6em;
+    padding-bottom: 2em;
+    font: .9em;
+    text-align: center;
+    display: block; }
+
+.col-sm-4 > img {
+  display: block;
+  margin: 0 auto; }
+
 body {
   -webkit-font-smoothing: antialiased !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

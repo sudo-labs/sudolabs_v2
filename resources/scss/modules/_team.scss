@@ -1,0 +1,49 @@
+.teamBG {
+    @include contentSection($white);
+    padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.teamContent {
+	color: $white;
+	position: relative;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include modifier('light') {
+		color: $darkgrey;
+	}
+
+	@include element('title') {
+		margin: 0 0 .5em 0;
+		font: 1.8em GothamBold;
+		color: $darkgrey;
+		text-align: center;
+	}
+
+	@include element('description') {
+			text-align: center;
+			margin-bottom: 3em;
+	}
+
+	@include element('name') {
+		padding-top: 1em;
+		font: 1.2em GothamBold;
+		text-align: center;
+		display: block;
+	}
+
+	@include element('role') {
+		padding-top: .6em;
+		padding-bottom: 2em;
+		font: .9em;
+		text-align: center;
+		display: block;
+	}
+}
+
+.col-sm-4 > img {
+    display: block;
+    margin: 0 auto;
+}
