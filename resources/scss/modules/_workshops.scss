@@ -99,8 +99,17 @@
 
 @media (max-width: 614px) {
     .workshops__button--margin {
-        margin-top: .8em;
+        margin-top: 0.7em;
     }
+
+	.workshops--mobile {
+		padding: 1.8em;
+	}
+
+	.workshopsBG2--mobile {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }
 
 // .container-fluid , .row, .col-sm-2, col-sm-10{

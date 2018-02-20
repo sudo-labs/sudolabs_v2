@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
             response.items.forEach(function(item) {
                 var postContainer = document.createElement('div')
-                postContainer.className = 'blog__container'
+                postContainer.className = 'blog__container blog--mobile'
 
                 var title = document.createElement('h1');
                 title.className = "blog__title";
@@ -29,7 +29,11 @@ $( document ).ready(function() {
 
                 var bySpan = document.createElement("span");
                 bySpan.className = 'blog__author';
-                bySpan.innerHTML = subtitle;                
+                bySpan.innerHTML = subtitle;
+
+                var thumb = document.createElement("img");
+                thumb.className = 'blog__thumbnail';
+                thumb.src = item.thumbnail;                
 
                 var hiddenSpan = document.createElement("div");
                 hiddenSpan.className = "more__text";
@@ -46,6 +50,7 @@ $( document ).ready(function() {
                 postContainer.appendChild(title);
                 postContainer.appendChild(bySpan);
                 postContainer.appendChild(date);
+                // postContainer.appendChild(thumb);
                 postContainer.appendChild(hiddenSpan);
                 postContainer.appendChild(readMore);
                 postContainer.appendChild(hide);

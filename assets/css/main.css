@@ -742,7 +742,12 @@ h1.type {
 
 @media (max-width: 614px) {
   .workshops__button--margin {
-    margin-top: .8em; } }
+    margin-top: 0.7em; }
+  .workshops--mobile {
+    padding: 1.8em; }
+  .workshopsBG2--mobile {
+    padding-left: 1em;
+    padding-right: 1em; } }
 
 .pressBG {
   background-color: #F9F9F9;
@@ -861,6 +866,10 @@ h1.type {
   padding-left: 0;
   padding-right: 0; }
 
+.blog__thumbnail {
+  max-width: 200px;
+  height: auto; }
+
 .read__more {
   display: block;
   font: .8em GothamBold;
@@ -902,6 +911,13 @@ h1.type {
   font-size: .9em;
   font-weight: bold;
   padding-top: .5em; }
+
+@media (max-width: 614px) {
+  .blog--mobile {
+    padding: 1.8em; }
+  .blogBG2--mobile {
+    padding-left: 1em;
+    padding-right: 1em; } }
 
 .solidBG {
   background-color: #FFF;
