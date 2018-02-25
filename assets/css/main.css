@@ -825,20 +825,23 @@ h1.type {
   padding-top: 4em;
   padding-bottom: 4em; }
 
-.blog__container {
-  position: relative;
+.blog__card {
+  background: black;
   max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
   border: 1px solid #e5e5e5;
-  background-color: white;
-  padding: 3em;
+  border-radius: .3em;
   margin-bottom: 2em;
-  border-radius: .3em; }
+  position: relative;
+  margin-right: auto;
+  margin-left: auto; }
+
+.blog__container {
+  background-color: white;
+  padding: 3em; }
 
 .blog__title {
   margin: 0 0 .5em 0;
-  font: 1.8em GothamBold;
+  font: 1.5em GothamBold;
   color: #1E1E1E; }
 
 .blog__button {
@@ -867,11 +870,20 @@ h1.type {
   padding-right: 0; }
 
 .blog__thumbnail {
-  max-width: 200px;
-  height: auto; }
+  position: relative;
+  height: 250px;
+  border-radius: 2px 2px 0 0;
+  object-fit: cover;
+  object-position: 50% 35%;
+  /* default value: image is centered*/
+  width: 100%; }
+  .blog__thumbnail--overlay {
+    content: '';
+    opacity: 0.55;
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */ }
 
 .read__more {
-  display: block;
   font: .8em GothamBold;
   color: #FFF;
   text-transform: uppercase;
@@ -880,12 +892,25 @@ h1.type {
   margin-top: 2em;
   padding: 1em 3em;
   border: 0;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-right: 1em; }
   .read__more:hover {
     background-color: #ec2c75; }
 
 .read__less {
-  display: block;
+  font: .8em GothamBold;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #DE5086;
+  padding: 1em 3em;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 1em; }
+  .read__less:hover {
+    background-color: #ec2c75; }
+
+.read__medium {
   font: .8em GothamBold;
   color: #FFF;
   text-transform: uppercase;
@@ -894,8 +919,9 @@ h1.type {
   padding: 1em 3em;
   border: 0;
   border-radius: 4px; }
-  .read__less:hover {
-    background-color: #ec2c75; }
+  .read__medium:hover {
+    background-color: #ec2c75;
+    text-decoration: none; }
 
 .more__text {
   margin-top: 2em; }
@@ -917,7 +943,9 @@ h1.type {
     padding: 1.8em; }
   .blogBG2--mobile {
     padding-left: 1em;
-    padding-right: 1em; } }
+    padding-right: 1em; }
+  .mobileMargin {
+    margin-top: 0.7em; } }
 
 .solidBG {
   background-color: #FFF;

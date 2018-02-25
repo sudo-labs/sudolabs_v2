@@ -7,10 +7,13 @@ $( document ).ready(function() {
         // console.log(response)
         if (response.status === "ok") {
             document.querySelector('.blogBG2 > img').style.display = 'none';
-            var blogDiv = document.querySelector('.blog');
+            var blogDiv = document.querySelector('.blogBG2');
             var i = 1;
 
             response.items.forEach(function(item) {
+                var postCard = document.createElement('div')
+                postCard.className = 'blog__card'
+
                 var postContainer = document.createElement('div')
                 postContainer.className = 'blog__container blog--mobile'
 
@@ -20,7 +23,7 @@ $( document ).ready(function() {
                 title.innerHTML = item.title;
 
                 var desc = item.content;
-                var subtitle = desc.substring(0, desc.indexOf("</h4>") + 5) + ' | ';
+                var subtitle = desc.substring(0, desc.indexOf("</h4>") + 5) + ' · ';
                 var remaining = desc.substring(desc.indexOf("</h4>"));
 
                 var date = document.createElement('span')
@@ -31,31 +34,48 @@ $( document ).ready(function() {
                 bySpan.className = 'blog__author';
                 bySpan.innerHTML = subtitle;
 
-                var thumb = document.createElement("img");
-                thumb.className = 'blog__thumbnail';
-                thumb.src = item.thumbnail;                
+
+                if(item.thumbnail.match(/\.(jpeg|jpg|gif|png)$/)){
+                    var thumb = document.createElement("img");
+                    thumb.className = 'blog__thumbnail blog__thumbnail--overlay';
+                    thumb.src = item.thumbnail;
+                    postCard.appendChild(thumb);  
+                }            
 
                 var hiddenSpan = document.createElement("div");
                 hiddenSpan.className = "more__text";
                 hiddenSpan.innerHTML = remaining;
 
+                var buttonContainer = document.createElement("div");
+                buttonContainer.className = "blog__buttonContainer";
+
                 var readMore = document.createElement("button");
                 readMore.className = "read__more";
-                readMore.innerHTML = "Read More";
+                readMore.innerHTML = "Expand";
 
                 var hide = document.createElement("button");
                 hide.className = "read__less";
                 hide.innerHTML = "Hide";
 
+                var readMedium = document.createElement("button");
+                readMedium.className = "read__medium mobileMargin";
+                readMedium.innerHTML = "Read on Medium";
+
+                var readMediumLink = document.createElement("a");
+                readMediumLink.className = "link--pink";
+                readMediumLink.href = item.guid;
+
+                buttonContainer.appendChild(readMore);
+                buttonContainer.appendChild(hide);
+                buttonContainer.appendChild(readMediumLink);
+                readMediumLink.appendChild(readMedium);
                 postContainer.appendChild(title);
                 postContainer.appendChild(bySpan);
                 postContainer.appendChild(date);
-                // postContainer.appendChild(thumb);
                 postContainer.appendChild(hiddenSpan);
-                postContainer.appendChild(readMore);
-                postContainer.appendChild(hide);
-
-                blogDiv.appendChild(postContainer);
+                postContainer.appendChild(buttonContainer);
+                postCard.appendChild(postContainer);
+                blogDiv.appendChild(postCard);
 
                 i++;
             })

@@ -3,23 +3,25 @@
 }
 
 .blog {
-
-	@include element('container') {
-		position: relative;
+	@include element('card') {
+		background: black;
 		max-width: 900px;
+		border: 1px solid $lightgrey2;
+		border-radius: .3em;
+		margin-bottom: 2em;
+		position: relative;
 		margin-right: auto;
 		margin-left: auto;
-    	// box-shadow: 0 0 23px 8px rgba(0,0,0,0.03);
-    	border: 1px solid $lightgrey2;
+	}
+
+	@include element('container') {
     	background-color: white;
 		padding: 3em;
-		margin-bottom: 2em;
-		border-radius: .3em;
 	}
 
 	@include element('title') {
 		margin: 0 0 .5em 0;
-		font: 1.8em GothamBold;
+		font: 1.5em GothamBold;
 		color: $darkgrey;
 	}
 
@@ -57,15 +59,23 @@
 	}
 
 	@include element('thumbnail') {
-		max-width: 200px;
-		height: auto;
-	}
+		position: relative;
+		height: 250px;
+		border-radius: 2px 2px 0 0;
+		object-fit: cover;
+  		object-position: 50% 35%; /* default value: image is centered*/
+		width: 100%;
 
+		@include modifier('overlay') {
+			content:'';
+  			opacity: 0.55;
+  			filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+	}
 }
 
 .read {
 	@include element('more') {
-		display: block;
 		font: .8em GothamBold;
 		color: $white;
 		text-transform: uppercase;
@@ -75,6 +85,7 @@
 		padding: 1em 3em;
 		border: 0;
 		border-radius: 4px;
+		margin-right: 1em;
 
 		@include modifierLink('hover') {
 			background-color: #ec2c75;
@@ -82,7 +93,22 @@
 	}
 
 	@include element('less') {
-		display: block;
+		font: .8em GothamBold;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: $darkpink;
+		padding: 1em 3em;
+		border: 0;
+		border-radius: 4px;
+		margin-right: 1em;
+
+		@include modifierLink('hover') {
+			background-color: #ec2c75;
+		}
+	}
+
+	@include element('medium') {
 		font: .8em GothamBold;
 		color: $white;
 		text-transform: uppercase;
@@ -94,6 +120,7 @@
 
 		@include modifierLink('hover') {
 			background-color: #ec2c75;
+			text-decoration: none;
 		}
 	}
 }
@@ -126,4 +153,8 @@
 		padding-left: 1em;
 		padding-right: 1em;
 	}
+
+	.mobileMargin {
+        margin-top: 0.7em;
+    }
 }
