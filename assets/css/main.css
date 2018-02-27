@@ -360,13 +360,14 @@ h1.type {
   .sponpart__title {
     font: 1.5em GothamBold; }
   .sponpart__logo {
-    max-width: 300px;
+    max-width: 280px;
     max-height: 80px;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%); }
-    .sponpart__logo--leftMargin {
-      margin-left: 2em; }
+    filter: grayscale(100%);
+    margin: 2em; }
+    .sponpart__logo--small {
+      max-width: 160px; }
 
 .sponpart__logo:hover {
   -webkit-filter: none;

@@ -17,13 +17,14 @@
 	}
 
 	@include element('logo') {
-		max-width: 300px;
+		max-width: 280px;
 		max-height: 80px;
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     	filter: grayscale(100%);
-
-    	@include modifier('leftMargin') {
-			margin-left: 2em;
+    	margin: 2em;
+    	
+    	@include modifier('small') {
+    		max-width: 160px;
     	}
 	}
 }
