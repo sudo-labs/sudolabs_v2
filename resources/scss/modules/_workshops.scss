@@ -10,9 +10,10 @@
     // box-shadow: 0 0 23px 8px rgba(0,0,0,0.03);
     border: 1px solid $lightgrey2;
     background-color: white;
-	padding: 3em;
+	padding: 1.5em;
 	margin-bottom: 2em;
 	border-radius: .3em;
+	height: 100%;
 	
 	@include modifier('empty') {
 		position: relative;
@@ -20,15 +21,16 @@
 		margin-right: auto;
 		margin-left: auto;
     	border: 1px dashed $darkgrey;
-		padding: 3em;
+		padding: 2em;
 		margin-bottom: 2em;
 		border-radius: .3em;
 	}
 
 	@include element('title') {
 		margin: 0 0 .5em 0;
-		font: 1.8em GothamBold;
+		font: 1.5em GothamBold;
 		color: $darkgrey;
+		text-align: center;
 
 		@include modifier('center') {
 			font: 1.5em GothamBold;
@@ -52,6 +54,8 @@
 		padding: 1em 3em;
 		border: 0;
 		border-radius: 4px;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
 
 		@include modifierLink('hover') {
 			background-color: #ec2c75;
@@ -59,13 +63,16 @@
 	}
 
 	@include element('icon') {
+		display: block;
 		width: 2.7em;
-		float: right;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1em;
 	}
 
 	@include element('pill') {
-		display: inline-block;
-		background-color: $darkpink;
+		display: inline;
+		background-color: $darkgrey;
 		font-size: .8em;
 		color: $white;
 		font-weight: bold;
@@ -74,7 +81,7 @@
 		padding-right: 1em;
 		border-radius: 100em;
 		text-transform: uppercase;
-		margin-bottom: 1.7em;
+		margin-bottom: 1em;
 	}
 
 	@include element('subtitle') {
@@ -89,6 +96,17 @@
 		}
 	}
 
+	@include modifier('center') {
+		text-align: center;
+	}
+
+	@include modifier('maxWidth900') {
+		max-width: 900px;
+	}
+
+	@include modifier('smol') {
+		font-size: .815em;
+	}
 }
 
 @media (max-width: 767px) {
@@ -98,10 +116,6 @@
 }
 
 @media (max-width: 614px) {
-    .workshops__button--margin {
-        margin-top: 0.7em;
-    }
-
 	.workshops--mobile {
 		padding: 1.8em;
 	}
@@ -109,6 +123,30 @@
 	.workshopsBG2--mobile {
 		padding-left: 1em;
 		padding-right: 1em;
+	}
+}
+
+// Workshops Modal
+
+.w3-modal {
+	padding-top: 25vh;
+	z-index: 100;
+}
+
+.w3-modal-content {
+	padding: 3.5em 3em 3.5em 3em;
+	max-width: 800px;
+}
+
+@media (max-width: 614px) {
+	.w3-modal-content {
+		padding: 2em 0.5em 2em 0.5em;
+	}
+}
+
+@media (max-height: 850px) {
+	.w3-modal {
+		padding-top: 5%;
 	}
 }
 

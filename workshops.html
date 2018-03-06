@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<meta charset="UTF-8">
@@ -62,102 +63,257 @@
 		</section>
 
 		<div class="workshopsBG2 workshopsBG2--mobile">
+			  <div id="id01" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id01').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__html.png" class="workshops__icon" alt="HTML Icon">
+			       		<h1 class="workshops__title">Build Your Own Website</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+			      		<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span>
+			        	<p>In this workshop, you'll learn to build an online portfolio using HTML and CSS. The Sudo workshops team has tailored this workshop to be interactive and collaborative, allowing you to easily complete and customize the final project with no prior experience.</p>
+						<p>Be sure to bring your own laptop and download a text editor (such as <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>) in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="https://www.sublimetext.com/3" target="_blank"><button class="workshops__button">Download Sublime Text</button></a>
+					<a href="assets/pdfs/Cheatsheet_HTML.pdf" target="_blank"><button class="workshops__button">Download Cheat Sheet</button></a>
+					<a href="workshops/intro_web_dev/index.html" target="_blank"><button class="workshops__button">View our Demo</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="id02" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id02').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__js.png" class="workshops__icon" alt="JavaScript Icon">
+						<h1 class="workshops__title">Introduction to JavaScript</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+			      		<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span> <span class="workshops__pill">JavaScript</span>
+			      		<p>In this web development workshop, you'll take your knowledge of HTML and CSS to a new level. Javascript will be introduced to add a new interactive dimension to your websites. This workshop is tailored for beginners, but experience in basic HTML and CSS would be beneficial.</p>
+						<p>Be sure to bring your own laptop and download a text editor (such as <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>) in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="https://www.sublimetext.com/3" target="_blank"><button class="workshops__button">Download Sublime Text</button></a>
+					<a href="assets/pdfs/Cheatsheet_Javascript.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="id03" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id03').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__python.png" class="workshops__icon" alt="Python Icon">
+						<h1 class="workshops__title">Python for Beginners</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+			      		<span class="workshops__pill">Python</span>
+			      		<p>In this workshop, you'll learn the basic concepts of programming in the language Python. This interactive workshop is tailored for beginners, allowing anyone to easily follow along and develop a customizable project. Learn more about Python <a href="https://www.python.org/about/gettingstarted/" target="_blank">here</a>.</p>
+						<p>Be sure to bring your own laptop and download the newest version of Python in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="https://www.python.org/downloads" target="_blank"><button class="workshops__button">Download Python</button></a>
+					<a href="assets/pdfs/Cheatsheet_Python.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="id04" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id04').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__cc.png" class="workshops__icon" alt="HTML Icon">
+						<h1 class="workshops__title">Creative Computing</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+			      		<span class="workshops__pill">Processing</span> <span class="workshops__pill">Python</span>
+			      		<p>In this workshop, we will cover the basics of programming using Processing and Python to draw and animate pictures. This interactive and collaborative workshop will allow you to develop your own designs, with help from Sudo's volunteer mentors. No previous computer programming or artistic experience is required.</p>
+						<p>Be sure to bring your own laptop and download <a href="https://processing.org/download/" target="_blank">Processing</a> in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="https://processing.org/download" target="_blank"><button class="workshops__button">Download Processing</button></a>
+					<a href="assets/pdfs/Cheatsheet_CreativeComputing.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="id05" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id05').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__wordpress.svg" class="workshops__icon" alt="WordPress Icon">
+						<h1 class="workshops__title">WordPress Basics</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+						<span class="workshops__pill">WordPress</span> <span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span>
+			      		<p>In this workshop, we'll cover the basics of developing a website using Wordpress. This interactive and collaborative workshop will allow you to develop your own custom webpage, with help from Sudo's volunteer mentors. No previous programming experience is required.</p>
+						<p>Be sure to bring your own laptop in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="assets/pdfs/Cheatsheet_WordPress.pdf" target="_blank"><button class="workshops__button">Download Cheat Sheet</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="id06" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id06').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__css.svg" class="workshops__icon" alt="CSS Icon">
+						<h1 class="workshops__title">Designing Your Website</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+			      		<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span> <span class="workshops__pill">BOOTSTRAP</span>
+			      		<p>This workshop will teach you how to build your own website from scratch and how to create custom and modern designs. You will be learning HTML, advanced CSS, and a few Bootstrap elements to make a custom website.</p>
+						<p>Be sure to bring your own laptop and download a text editor (such as <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>) in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="assets/pdfs/Cheatsheet_DYW.pdf" target="_blank"><button class="workshops__button">Download Cheat Sheet</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+			
+			<div id="id07" class="w3-modal">
+			    <div class="w3-modal-content w3-modal-content--mobile w3-animate-top w3-card-4">
+			      <header class="w3-container"> 
+			       		<span onclick="document.getElementById('id07').style.display='none'" 
+			       		class="w3-button w3-display-topright">&times;</span>
+			       		<img src="assets/imgs/workshops/workshops__r.png" class="workshops__icon" alt="Data Analytics Icon">
+						<h1 class="workshops__title">Exploring Data Science with R</h1>
+			      </header>
+			      <div class="w3-container">
+			      	<div class="workshops--center">
+			      		<span class="workshops__pill">R</span>
+			      		<p>This workshop will cover the basics of Data Science using the language R. You will be learning HTML, advanced CSS, and a few Bootstrap elements to make a custom website.</p>
+						<p>Be sure to bring your own laptop and <a href="https://www.r-project.org/" target="_blank">install R</a> in preparation for the event.</p>
+			      </div>
+			      <footer class="w3-container workshops--center">
+			        <a href="https://www.r-project.org/" target="_blank"><button class="workshops__button">Install R</button></a>
+					<a href="https://github.com/sudo-labs/r-data-science" target="_blank"><button class="workshops__button workshops__button--margin">View the Workshop</button></a>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+
 			<h1 class="workshops__title--center">Join us for our free Coding Workshops</h1>
 			<p class="workshops__description">We hope to be a dedicated and available resource for everyone on their programming journey. <br>Explore all our free coding workshops below, and check out our <a href="./events" class="link--pink">upcoming events</a> to see when they are hosted next!</p>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__html.png" class="workshops__icon" alt="HTML Icon">
-				<h1 class="workshops__title">Build Your Own Website</h1>
-				<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>In this workshop, you'll learn to build an online portfolio using HTML and CSS. The Sudo workshops team has tailored this workshop to be interactive and collaborative, allowing you to easily complete and customize the final project with no prior experience.</p>
-					<p>Be sure to bring your own laptop and download a text editor (such as <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>) in preparation for the event.</p>
-					<br>
-					<a href="https://www.sublimetext.com/3" target="_blank"><button class="workshops__button">Download Sublime Text</button></a>
-					<a href="assets/pdfs/Cheatsheet_HTML.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
-					<a href="workshops/intro_web_dev/index.html" target="_blank"><button class="workshops__button workshops__button--margin">View our Demo</button></a>
-				</div>
-			</div>
+			<div class="container-fluid workshops--maxWidth900">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__html.png" class="workshops__icon" alt="HTML Icon">
+							<h1 class="workshops__title">Build Your Own Website</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span>
+								<br><br><button onclick="document.getElementById('id01').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__js.png" class="workshops__icon" alt="JavaScript Icon">
-				<h1 class="workshops__title">Introduction to JavaScript</h1>
-				<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span> <span class="workshops__pill">Javascript</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>In this web development workshop, you'll take your knowledge of HTML and CSS to a new level. Javascript will be introduced to add a new interactive dimension to your websites. This workshop is tailored for beginners, but experience in basic HTML and CSS would be beneficial.</p>
-					<p>Be sure to bring your own laptop and download a text editor (such as <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>) in preparation for the event.</p>
-					<br>
-					<a href="https://www.sublimetext.com/3" target="_blank"><button class="workshops__button">Download Sublime Text</button></a>
-					<a href="assets/pdfs/Cheatsheet_Javascript.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
+					<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__js.png" class="workshops__icon" alt="JavaScript Icon">
+							<h1 class="workshops__title">Introduction to JavaScript</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill ">HTML</span> <span class="workshops__pill">CSS</span> <span class="workshops__pill">JavaScript</span>
+								<br><br><button onclick="document.getElementById('id02').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__python.png" class="workshops__icon" alt="Python Icon">
-				<h1 class="workshops__title">Python for Beginners</h1>
-				<span class="workshops__pill">Python</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>In this workshop, you'll learn the basic concepts of programming in the language Python. This interactive workshop is tailored for beginners, allowing anyone to easily follow along and develop a customizable project. Learn more about Python <a href="https://www.python.org/about/gettingstarted/" target="_blank">here</a>.</p>
-					<p>Be sure to bring your own laptop and download the newest version of Python in preparation for the event.</p>
-					<br>
-					<a href="https://www.python.org/downloads" target="_blank"><button class="workshops__button">Download Python</button></a>
-					<a href="assets/pdfs/Cheatsheet_Python.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
-				</div>
-			</div>
+				<div class="row">
+						<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__python.png" class="workshops__icon" alt="Python Icon">
+							<h1 class="workshops__title">Python for Beginners</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill">Python</span>
+								<br><br><button onclick="document.getElementById('id03').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__cc.png" class="workshops__icon" alt="Paint Brush Icon">
-				<h1 class="workshops__title">Creative Computing</h1>
-				<span class="workshops__pill">Processing</span> <span class="workshops__pill">Python</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>In this workshop, we will cover the basics of programming using Processing and Python to draw and animate pictures. This interactive and collaborative workshop will allow you to develop your own designs, with help from Sudo's volunteer mentors. No previous computer programming or artistic experience is required.</p>
-					<p>Be sure to bring your own laptop and download <a href="https://processing.org/download/" target="_blank">Processing</a> in preparation for the event.</p>
-					<br>
-					<a href="https://processing.org/download" target="_blank"><button class="workshops__button">Download Processing</button></a>
-					<a href="assets/pdfs/Cheatsheet_CreativeComputing.pdf" target="_blank"><button class="workshops__button workshops__button--margin">Download Cheat Sheet</button></a>
+					<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__cc.png" class="workshops__icon" alt="HTML Icon">
+							<h1 class="workshops__title">Creative Computing</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill">Processing</span> <span class="workshops__pill">Python</span>
+								<br><br><button onclick="document.getElementById('id04').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__wordpress.svg" class="workshops__icon" alt="WordPress Icon">
-				<h1 class="workshops__title">WordPress Basics</h1>
-				<span class="workshops__pill">WordPress</span> <span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>In this workshop, we'll cover the basics of developing a website using Wordpress. This interactive and collaborative workshop will allow you to develop your own custom webpage, with help from Sudo's volunteer mentors. No previous programming experience is required.</p>
-					<p>Be sure to bring your own laptop in preparation for the event.</p>
-					<br><a href="assets/pdfs/Cheatsheet_WordPress.pdf" target="_blank"><button class="workshops__button">Download Cheat Sheet</button></a>
-				</div>
-			</div>
+				<div class="row">
+						<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__wordpress.svg" class="workshops__icon" alt="WordPress Icon">
+							<h1 class="workshops__title">WordPress Basics</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill">WordPress</span> <span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span>
+								<br><br><button onclick="document.getElementById('id05').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__css.svg" class="workshops__icon" alt="CSS Icon">
-				<h1 class="workshops__title">Designing Your Website</h1>
-				<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span> <span class="workshops__pill">BOOTSTRAP</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>This workshop will teach you how to build your own website from scratch and how to create custom and modern designs. You will be learning HTML, advanced CSS, and a few Bootstrap elements to make a custom website.</p>
-					<p>Be sure to bring your own laptop and download a text editor (such as <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>) in preparation for the event.</p>
-					<br><a href="assets/pdfs/Cheatsheet_DYW.pdf" target="_blank"><button class="workshops__button">Download Cheat Sheet</button></a>
+					<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__css.svg" class="workshops__icon" alt="CSS Icon">
+							<h1 class="workshops__title">Designing Your Website</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill">HTML</span> <span class="workshops__pill">CSS</span> <span class="workshops__pill">BOOTSTRAP</span>
+								<br><br><button onclick="document.getElementById('id06').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div class="workshops workshops--mobile">
-				<img src="assets/imgs/workshops/workshops__r.png" class="workshops__icon" alt="Data Analytics Icon">
-				<h1 class="workshops__title">Exploring Data Science with R</h1>
-				<span class="workshops__pill">R</span>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>This workshop will cover the basics of Data Science using the language R. You will be learning HTML, advanced CSS, and a few Bootstrap elements to make a custom website.</p>
-					<p>Be sure to bring your own laptop and <a href="https://www.r-project.org/" target="_blank">install R</a> in preparation for the event.</p>
-					<br><a href="https://www.r-project.org/" target="_blank"><button class="workshops__button">Install R</button></a>
-					<a href="https://github.com/sudo-labs/r-data-science" target="_blank"><button class="workshops__button workshops__button--margin">View the Workshop</button></a>
-				</div>
-			</div>
+				<div class="row">
+						<div class="col-sm-6">
+						<div class="workshops workshops--mobile">
+							<img src="assets/imgs/workshops/workshops__r.png" class="workshops__icon" alt="Data Analytics Icon">
+							<h1 class="workshops__title">Exploring Data Science with R</h1>
+							<div class="workshops--center">
+								<span class="workshops__pill">R</span>
+								<br><br><button onclick="document.getElementById('id07').style.display='block'" class="workshops__button">Details</button>
+							</div>
+						</div>
+					</div>
 
-			<div class="workshops--empty workshops--mobile">
-				<h1 class="workshops__title">Have a Workshop Idea?</h1>
-				<div class="container-fluid workshops__container--noPadding">
-					<p>Are there any languages, frameworks, or concepts you believe Kingston would like to learn? We tailor our workshops to suit the Kingston community, and would love to hear what workshops you would like to see next.<br><br>Reach out to us at <a class="acc" href="mailto:workshops@sudolabs.ca">workshops@sudolabs.ca</a> to pitch your idea!</p>
+					<div class="col-sm-6">
+						<div class="workshops--empty workshops--mobile">
+							<h1 class="workshops__title">Have a Workshop Idea?</h1>
+							<div class="workshops--center workshops--smol">
+								<p>Are there any languages, frameworks, or concepts you believe Kingston would like to learn? We tailor our workshops to suit the Kingston community, and would love to hear what workshops you would like to see next.</p>
+								<p>Reach out to us at <a class="acc" href="mailto:workshops@sudolabs.ca">workshops@sudolabs.ca</a> to pitch your idea!</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 
@@ -170,7 +326,7 @@
 				<a href="https://www.linkedin.com/company/sudo-labs" target="_blank"><img src="assets/imgs/socialMedia/footer__linkedin.svg" class="footer__socialMediaIcon hvr-float" alt="LinkedIn link"></a>
 				<p><a href="mailto:hello@sudolabs.ca" class="link--white hvr-underline-from-center"><span itemprop="email">hello@sudolabs.ca</span></a></p>
 				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XFGG83FG5EGYA" target="_blank" alt="Donate"><button class="pinkButton pinkButton--clearMargin">Donate</button></a>
-				<p class="footer__copyright">&#169; 2017 Sudo Labs. Made with skills by <a href="http://www.carafalcon.com" alt="Cara's website" class="link--white footer__copyright--bold">Cara Falcon</a>.</p>
+				<p class="footer__copyright">&#169; 2018 Sudo Labs. Made with skills by <a href="http://www.carafalcon.com" alt="Cara's website" class="link--white footer__copyright--bold">Cara Falcon</a>.</p>
 				<img src="assets/imgs/footer__arrow.svg" class="footer__logo">
 			</div>
 		</section>
