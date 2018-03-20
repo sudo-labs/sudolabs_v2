@@ -1059,6 +1059,24 @@ h1.type {
   display: block;
   margin: 0 auto; }
 
+.codeOfConductBG {
+  background-color: #FFF;
+  padding: 7vw;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
+.codeOfConductContent {
+  position: relative;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
+  .codeOfConductContent__title {
+    margin-top: 2em;
+    font: 1.8em GothamBold;
+    color: #1E1E1E; }
+
 body {
   -webkit-font-smoothing: antialiased !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

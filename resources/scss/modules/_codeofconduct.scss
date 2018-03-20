@@ -1,0 +1,18 @@
+.codeOfConductBG {
+    @include contentSection($white);
+    padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.codeOfConductContent {
+	position: relative;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include element('title') {
+		margin-top: 2em;
+		font: 1.8em GothamBold;
+		color: $darkgrey;
+	}
+}
