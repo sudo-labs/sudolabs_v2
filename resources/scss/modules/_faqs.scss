@@ -19,6 +19,10 @@
 			font: 1em GothamBold;
 		}
 	}
+}
 
-
+@media (max-width: 768px) {
+    .faq--fixMargin {
+        margin-bottom: 2.63px;
+    }
 }
