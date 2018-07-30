@@ -25,10 +25,17 @@
 		}
 	}
 
-	@include element('container'){
-		@include modifier('margin'){
+	@include element('container') {
+		@include modifier('margin') {
 			margin-top: 3em;
 		}
 	}
 
+	@include element('testimonial') {
+		font-style: italic;
+	}
+
+	@include element('testimonialAuthor') {
+		font-weight: bolder;
+	}
 }

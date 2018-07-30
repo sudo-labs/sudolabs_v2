@@ -265,6 +265,10 @@ h1.type {
     height: 110px; }
   .about__container--margin {
     margin-top: 3em; }
+  .about__testimonial {
+    font-style: italic; }
+  .about__testimonialAuthor {
+    font-weight: bolder; }
 
 .eventsBG {
   background-color: transparent;
@@ -369,7 +373,7 @@ h1.type {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    margin: 2em; }
+    margin: 1.3em; }
     .sponpart__logo--small {
       max-width: 160px; }
 
