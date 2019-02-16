@@ -4,7 +4,7 @@ $( document ).ready(function() {
     };
 
     $.get('https://api.rss2json.com/v1/api.json', data, function(response) {
-        // console.log(response)
+        console.log(response)
         if (response.status === "ok") {
             document.querySelector('.blogBG2 > img').style.display = 'none';
             var blogDiv = document.querySelector('.blogBG2');
@@ -23,16 +23,16 @@ $( document ).ready(function() {
                 title.innerHTML = item.title;
 
                 var desc = item.content;
-                var subtitle = desc.substring(0, desc.indexOf("</h4>") + 5) + ' · ';
-                var remaining = desc.substring(desc.indexOf("</h4>"));
+                // var subtitle = desc.substring(0, desc.indexOf("</h4>") + 5) + ' · ';
+                // var remaining = desc.substring(desc.indexOf("</h4>"));
 
                 var date = document.createElement('span')
                 date.className = 'blog__date';
-                date.innerHTML = moment(item.pubDate.substring(0, 10)).format("MMM Do YYYY");
+                date.innerHTML = 'Published on ' + moment(item.pubDate.substring(0, 10)).format("MMM Do YYYY");
 
-                var bySpan = document.createElement("span");
-                bySpan.className = 'blog__author';
-                bySpan.innerHTML = subtitle;
+                // var bySpan = document.createElement("span");
+                // bySpan.className = 'blog__author';
+                // bySpan.innerHTML = subtitle;
 
 
                 if(item.thumbnail.match(/\.(jpeg|jpg|gif|png)$/)){
@@ -44,7 +44,8 @@ $( document ).ready(function() {
 
                 var hiddenSpan = document.createElement("div");
                 hiddenSpan.className = "more__text";
-                hiddenSpan.innerHTML = remaining;
+                // hiddenSpan.innerHTML = remaining;
+                hiddenSpan.innerHTML = desc;
 
                 var buttonContainer = document.createElement("div");
                 buttonContainer.className = "blog__buttonContainer";
@@ -70,7 +71,6 @@ $( document ).ready(function() {
                 buttonContainer.appendChild(readMediumLink);
                 readMediumLink.appendChild(readMedium);
                 postContainer.appendChild(title);
-                postContainer.appendChild(bySpan);
                 postContainer.appendChild(date);
                 postContainer.appendChild(hiddenSpan);
                 postContainer.appendChild(buttonContainer);
